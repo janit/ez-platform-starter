@@ -25,4 +25,4 @@ And possibly something random....
 
 This distribution itself is licensed under MIT, but all licenses for eZ Platform, StartBootstrap, etc. are obviously applicable. 
 
-There is no support or anything of that sorts.
+There is no support or guarantees of any sorts.
