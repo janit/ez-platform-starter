@@ -1,0 +1,49 @@
+-
+    mode: create
+    type: content_type
+    content_type_group: 1
+    name: Blog
+    identifier: blog
+    name_pattern: <title>
+    is_container: true
+    attributes:
+      -
+        type: ezstring
+        name: title
+        identifier: title
+        description: "Blog title"
+        required: true
+      -
+        type: ezrichtext
+        name: Description
+        identifier: description
+        description: "Blog description"
+        required: false
+
+-
+    mode: create
+    type: content_type
+    content_type_group: 1
+    name: Blog Post
+    identifier: blog_post
+    name_pattern: <title>
+    is_container: false
+    attributes:
+      -
+        type: ezstring
+        name: Title
+        identifier: title
+        description: "Post title"
+        required: true
+      -
+        type: ezrichtext
+        name: Body
+        identifier: body
+        description: "Blog body text"
+        required: false
+      -
+        type: ezimage
+        name: Main Image
+        identifier: main_image
+        description: "Main image"
+        required: true

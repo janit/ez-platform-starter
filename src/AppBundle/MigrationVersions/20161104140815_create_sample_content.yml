@@ -1,0 +1,72 @@
+
+-
+  mode: create
+  type: content
+  content_type: blog
+  main_location: 2
+  attributes:
+    - title: "Sample blog"
+  references:
+    -
+      identifier: blog_location
+      attribute: location_id
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Per gymnasios ma"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Hodie commun europee del un, regno occidental ma per. Uno da esser commun, de peano lingua nos. O responder gymnasios non, web il germano scientific angloromanic, del scientia professional o. Su nos clave romanic publicate, non pardona laborava occidental se. Il sia peano registrate simplificate, pro ascoltar proposito da.</para></section>
+        - main_image: '1.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Bluebird traducite an panoptimite"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Express is an object, called the majority of one parameter. Bluebird is an optimization used with text, arrays, dates and language-neutral interface that provides client and simple words. Facade Pattern. Facade Pattern is a fast and HTTP request and a utility to speed up the ECMAScript 3. Nvm is a JavaScript testing framework that are not to write cross-platform desktop widgets. The engine, code-named SpiderMonkey, is a term for asynchronous HTTP as API.</para><para>Coffeescript is used for creating Web browsers without having to load JavaScript transformation toolkit which a package manager to extend JavaScript code linter. AngularJS is a prototypical instance, which started as Gmail take advantage of the production of the three core technologies of plug-ins. Rhino, like SpiderMonkey, is a way of their containing scope. VueJS is a software design pattern.</para><para>Ext JS is a commonly used for example games, and respective standard defining how a library. Node. Falcor is an ECMAScript language used to be created by calling one of specifying an assertion library used to HTML and libraries developed and performance. On the three core technologies of a JavaScript code translator transpiler. Interactive content, for server-side Web browsers without page for many frameworks in environments that gets called immediately after declaration.</para></section>
+        - main_image: '4.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Que etiam giuseppe"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Da clave libere incorporate web. Ultra simplificate web le, pro tu rapide interlinguistica. Non lo commun moderne technologia, per da commun addresses. Que se message incorporate independente, duce multo russo tu con, iste personas publication sed o. In inviar tamben ascoltar uno, duo o campo national. Que etiam giuseppe movimento il, como instituto linguistas e nos.</para></section>
+        - main_image: '2.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Disuso summario Xasm"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Su web patre commun grammatica, se celo linguistic association web. Sed como infra parola e, web latino vocabulos anteriormente ma, del moderne romanic preparation le. Disuso summario es que, instruite traducite sanctificate il pan, ha original methodicamente via. Con esser effortio continentes su, duo il studio summario. E multo patre duo. Uno scientia sanctificate il, comprende intermediari representantes pan in. Hodie commun grammatica ma uso.</para></section>
+        - main_image: '3.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Pinstruite, traducite an DeLorean"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>You guys, take him in back and I'll be right there. Well c'mon, this ain't no peep show. Great Scott. Let me see that photograph again of your brother. Just as I thought, this proves my theory, look at your brother. The hell you doing to my car? Now, of course not, Biff, now, I wouldn't want that to happen. Hi.</para><para>Oh, no no no, I never uh, I never let anybody read my stories. Listen, Doc, you know there's something I haven't told you about the night we made that tape. Doc? Save the clock tower. Lorraine.</para><para>Where's Einstein, is he with you? Nothing, nothing, nothing, look tell her destiny has brought you together, tell her that she's the most beautiful you have ever seen. Girls like that stuff. What, what are you doing George? Hey McFly, what do you think you're doing. Are you gonna order something, kid? This is for all you lovers out there.</para></section>
+        - main_image: '5.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: blog_post
+    main_location: reference:blog_location
+    attributes:
+        - title: "Il sia peano hamburger simplificate bacon"
+        - body: <?xml version="1.0" encoding="UTF-8"?><section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Bacon ipsum dolor amet tri-tip picanha shank turkey doner, shankle tail. Pork sausage sirloin picanha bresaola hamburger. T-bone boudin spare ribs corned beef capicola rump pork chop burgdoggen meatball shank beef ribs. Landjaeger flank shankle chicken chuck. Tail doner beef ribs tri-tip salami brisket.</para><para>Jerky flank turkey brisket beef ribs doner ham bacon shank short ribs andouille burgdoggen. Chicken rump pancetta, ball tip prosciutto ham hock ground round capicola jerky beef ribs sausage. Leberkas pork meatball t-bone turducken bacon sausage venison doner shoulder. Capicola porchetta swine, tongue alcatra landjaeger bresaola ham hock t-bone drumstick beef ribs. Pork belly kielbasa burgdoggen pancetta swine drumstick.</para><para>Tongue shank alcatra pork chop ball tip biltong jowl brisket tenderloin corned beef turducken leberkas. Pork belly venison strip steak cupim bacon. Corned beef ground round bresaola, alcatra kevin chicken filet mignon pastrami. Pork belly ribeye ham corned beef pig short ribs capicola doner meatloaf sausage turducken pastrami turkey burgdoggen. Frankfurter boudin swine, shank ribeye meatloaf strip steak t-bone drumstick. Tail chicken strip steak shankle short loin tongue picanha.</para></section>
+        - main_image: '6.jpg'

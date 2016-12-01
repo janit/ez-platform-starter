@@ -1,0 +1,7 @@
+ez_systems_landing_page_field_type:
+    blocks:
+        contentlist:
+            views:
+                default:
+                    template: blocks/contentlist.html.twig
+                    name: Content List

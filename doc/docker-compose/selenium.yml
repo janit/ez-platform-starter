@@ -1,0 +1,21 @@
+version: '2'
+# Appends services to prod.yml, prod+dev, prod+redis, ..., always latests
+
+services:
+  selenium:
+    image: ${SELENIUM_IMAGE}
+    ports:
+     - "9999:9999"
+     - "4444:4444"
+    environment:
+     - SCREEN_WIDTH=1920
+     - SCREEN_HEIGHT=1080
+     - SCREEN_DEPTH=24
+
+  app:
+    depends_on:
+     - selenium
+    environment:
+     - EZP_TEST_REST_HOST=web
+     - BEHAT_SELENIUM_HOST=selenium
+     - BEHAT_WEB_HOST=web

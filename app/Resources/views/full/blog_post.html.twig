@@ -1,0 +1,37 @@
+{% extends "pagelayout.html.twig" %}
+
+{% set page_title = ez_content_name(content) %}
+
+{% block content %}
+
+<section id="services"  class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-offset-3">
+
+                <h1>{{ ez_content_name(content) }}</h1>
+
+                {{ ez_render_field(content,'body') }}
+                <hr />
+                <p>
+
+                <a href="{{ path( "ez_urlalias", {"locationId": location.parentLocationId} ) }}">&lt; Back to Blog</a>
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-offset-3">
+
+                <h4>Recent posts</h4>
+
+                <ul>
+                    <li>moso</li>
+                    <li>moro</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
