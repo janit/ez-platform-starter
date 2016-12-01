@@ -23,6 +23,6 @@ And possibly something random....
 
 ## License and support
 
-This distribution itself is licensed under MIT, but all licenses for eZ Platform, StartBootstrap, etc. are obviously applicable. 
+http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
 
 There is no support or guarantees of any sorts.
