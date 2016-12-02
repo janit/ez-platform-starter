@@ -1,0 +1,9 @@
+
+
+<h4>More blog posts</h4>
+
+<ul>
+    {% for blog_post in blog_posts %}
+        <li><a href="{{ path(blog_post.valueObject) }}">{{ blog_post.valueObject.contentInfo.name }}</a></li>
+    {% endfor %}
+</ul>

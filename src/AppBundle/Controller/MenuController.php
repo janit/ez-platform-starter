@@ -9,7 +9,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class MenuController extends Controller
 {
 
-
     public function mainMenuAction($currentLocationId)
     {
 

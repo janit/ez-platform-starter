@@ -22,12 +22,12 @@
             </div>
             <div class="col-lg-4 col-md-4 col-offset-3">
 
-                <h4>Recent posts</h4>
+                {{ render(
+                    controller('AppBundle:Extras:listBlogArticles',{
+                        'locationId': location.parentLocationId,
+                    })
+                ) }}
 
-                <ul>
-                    <li>moso</li>
-                    <li>moro</li>
-                </ul>
 
             </div>
         </div>

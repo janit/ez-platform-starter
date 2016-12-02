@@ -37,10 +37,10 @@
 <body id="page-top">
 
 {{ render(
-controller('AppBundle:Menu:mainMenu',{
-    'rootLocationId': 2,
-    'currentLocationId': location.id|default(2)
-})
+    controller('AppBundle:Menu:mainMenu',{
+        'rootLocationId': 2,
+        'currentLocationId': location.id|default(2)
+    })
 ) }}
 
 {% block content %}
