@@ -1,9 +1,16 @@
 ezpublish:
     system:
-        default:
+        blog:
+            pagelayout: blog_pagelayout.html.twig
+        site:
             pagelayout: pagelayout.html.twig
+        default:
             content_view:
                 full:
+                    main_landing_page:
+                        template: "full/main_landing_page.html.twig"
+                        match:
+                            Id\Location: [2]
                     landing_page:
                         template: "full/landing_page.html.twig"
                         match:

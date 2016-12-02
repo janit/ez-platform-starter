@@ -1,6 +1,7 @@
 imports:
   - {resource: 'views.yml'}
   - {resource: 'layouts.yml'}
+  - {resource: 'image_variations.yml'}
 
 ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
@@ -15,9 +16,11 @@ ezpublish:
     siteaccess:
         list:
           - site
+          - blog
         groups:
             site_group:
                 - site
+                - blog
         default_siteaccess: site
         match:
             URIElement: 1
@@ -31,6 +34,10 @@ ezpublish:
             # it is recommended to install clean, then change setting before you start adding binary content, otherwise you'll
             # need to manually modify your database data to reflect this to avoid exceptions.
             var_dir: var/site
-        site:
             languages:
                 - eng-GB
+        blog:
+            content:
+                tree_root:
+                    # Root locationId. Default is top locationId
+                    location_id: 61

@@ -17,8 +17,10 @@ class MainMenuQueryType implements QueryType {
 
         $parentLocationId = $parameters['parentLocationId'];
 
+        $validContentTypes = ['blog','landing_page'];
+
         $filter = new Query\Criterion\LogicalAnd([
-            new Query\Criterion\ContentTypeIdentifier('blog'),
+            new Query\Criterion\ContentTypeIdentifier($validContentTypes),
             new Query\Criterion\ParentLocationId($parentLocationId)
         ]);
 

@@ -6,7 +6,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">eZ PoC</a>
+            <a class="navbar-brand page-scroll" href="#page-top">eZ Starter</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -14,12 +14,12 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li>
-                    <a href="{{ path('ez_urlalias', {'locationId': 2}) }}">Landing Page</a>
+                    <a href="{{ path('ez_urlalias', {'locationId': 2}) }}">Front Page</a>
                 </li>
 
-                {% for menuItem in menuItems %}
+                {% for menu_item in menu_items %}
                 <li>
-                    <a href="{{ path(menuItem.valueObject) }}">{{ ez_content_name(menuItem.valueObject.contentInfo) }}</a>
+                    <a href="{{ path(menu_item.valueObject) }}">{{ ez_content_name(menu_item.valueObject.contentInfo) }}</a>
                 </li>
                 {% endfor %}
 

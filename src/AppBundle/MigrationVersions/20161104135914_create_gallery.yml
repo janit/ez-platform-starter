@@ -1,0 +1,66 @@
+
+-
+  mode: create
+  type: content
+  content_type: folder
+  main_location: 51
+  attributes:
+    - name: "Sample gallery"
+  references:
+    -
+      identifier: gallery_location
+      attribute: location_id
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Surfer"
+        - image: '1.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Forest"
+        - image: '2.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Deer"
+        - image: '3.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Hotrod"
+        - image: '4.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Carrots"
+        - image: '5.jpg'
+
+-
+    mode: create
+    type: content
+    content_type: image
+    main_location: reference:gallery_location
+    attributes:
+        - name: "Cat"
+        - image: '6.jpg'

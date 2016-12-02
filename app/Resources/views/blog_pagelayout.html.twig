@@ -34,13 +34,13 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color: black">
 
 {{ render(
-controller('AppBundle:Menu:mainMenu',{
-    'rootLocationId': 2,
-    'currentLocationId': location.id|default(2)
-})
+    controller('AppBundle:Menu:mainMenu',{
+        'rootLocationId': 2,
+        'currentLocationId': location.id|default(2)
+    })
 ) }}
 
 {% block content %}

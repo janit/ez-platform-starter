@@ -1,0 +1,27 @@
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter popup-gallery text-center">
+
+            <h3>{{ location.contentInfo.name }}</h3>
+
+            <hr />
+
+            {% for content in contentArray %}
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ ez_field_value(content,'image').uri }}" class="portfolio-box">
+                        <img src="{{ ez_field_value(content,'image').uri }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    {{ ez_content_name(content) }}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,7 +1,24 @@
 ez_systems_landing_page_field_type:
+    layouts:
+        sidebar:
+            identifier: sidebar
+            name: Right sidebar
+            description: Main section with sidebar on the right
+            thumbnail: bundles/app/img/layouts/two_columns.png
+            template: layouts/two_columns.html.twig
+            zones:
+                first:
+                    name: First zone
+                second:
+                    name: Second zone
     blocks:
         contentlist:
             views:
                 default:
                     template: blocks/contentlist.html.twig
+                    name: Content List
+        gallery:
+            views:
+                default:
+                    template: blocks/gallery.html.twig
                     name: Content List

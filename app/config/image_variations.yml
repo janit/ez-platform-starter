@@ -1,0 +1,8 @@
+ezpublish:
+    system:
+        default:
+            image_variations:
+                lift:
+                    reference: ~
+                    filters:
+                        - { name: geometry/scaledownonly, params: [320, 240] }
