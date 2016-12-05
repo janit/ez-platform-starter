@@ -15,12 +15,18 @@ And possibly something random....
 ## Install
 
  - Install eZ Platform see [INSTALL.md](https://github.com/ezsystems/ezstudio/blob/master/INSTALL.md)
+ - If you don't want to bother setting up Nginx / Apache, then the PHP built in server is fine for testing:
+ 
+ ```
+ php app/console server:run
+ ```
+
  - Run migrations:
  
  ```
  php app/console kaliop:migration:migrate
  ```
-
+ 
 ## License and support
 
 http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
