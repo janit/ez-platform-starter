@@ -39,7 +39,18 @@ _ezpublishFlexWorkflowRoutes:
 _ezpublishNotificationRoutes:
     resource: "@NotificationBundle/Resources/config/routing.yml"
 
-the_economist_poc:
+_ezStudioFormBuilder:
+    resource: "@EzSystemsFormBuilderBundle/Resources/config/routing.yml"
+
+_ezpublishDateBasedPublisher:
+    resource: "@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yml"
+    prefix: "%ez_systems_date_based_publisher_rest_prefix%"
+
+_contentOnTheFly:
+    resource: "@ContentOnTheFlyBundle/Resources/config/routing.yml"
+    prefix:   '%ezpublish_rest.path_prefix%'
+
+appbundle:
     resource: "@AppBundle/Controller/"
     type:     annotation
     prefix:   /

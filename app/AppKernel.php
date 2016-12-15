@@ -38,6 +38,7 @@ class AppKernel extends Kernel
             new eZ\Bundle\EzPublishIOBundle\EzPublishIOBundle(),
             new eZ\Bundle\EzPublishRestBundle\EzPublishRestBundle(),
             new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
+            new EzSystems\FormBuilderBundle\EzSystemsFormBuilderBundle(),
             new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
             new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
             new EzSystems\PlatformUIAssetsBundle\EzSystemsPlatformUIAssetsBundle(),
@@ -45,13 +46,19 @@ class AppKernel extends Kernel
             new EzSystems\EzSupportToolsBundle\EzSystemsEzSupportToolsBundle(),
             new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new Oneup\FlysystemBundle\OneupFlysystemBundle(),
             new EzSystems\PlatformInstallerBundle\EzSystemsPlatformInstallerBundle(),
             new EzSystems\RepositoryFormsBundle\EzSystemsRepositoryFormsBundle(),
             new EzSystems\EzPlatformSolrSearchEngineBundle\EzSystemsEzPlatformSolrSearchEngineBundle(),
             new EzSystems\StudioInstallerBundle\EzSystemsStudioInstallerBundle(),
-            new \Kaliop\eZMigrationBundle\EzMigrationBundle(),
+            new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
+            new JMS\TranslationBundle\JMSTranslationBundle(),
+            new EzSystems\CronBundle\EzSystemsCronBundle(),
+            new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
+            new EzSystems\EzContentOnTheFlyBundle\EzSystemsEzContentOnTheFlyBundle(),
             new AppBundle\AppBundle(),
+            new \Kaliop\eZMigrationBundle\EzMigrationBundle(),
         );
 
         switch ($this->getEnvironment()) {
