@@ -54,3 +54,6 @@ appbundle:
     resource: "@AppBundle/Controller/"
     type:     annotation
     prefix:   /
+
+_eztagsRoutes:
+    resource: "@NetgenTagsBundle/Resources/config/routing.yml"

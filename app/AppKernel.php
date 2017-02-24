@@ -59,6 +59,8 @@ class AppKernel extends Kernel
             new EzSystems\EzContentOnTheFlyBundle\EzSystemsEzContentOnTheFlyBundle(),
             new AppBundle\AppBundle(),
             new \Kaliop\eZMigrationBundle\EzMigrationBundle(),
+            new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
+            new Netgen\TagsBundle\NetgenTagsBundle()
         );
 
         switch ($this->getEnvironment()) {
