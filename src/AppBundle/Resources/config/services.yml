@@ -1,0 +1,10 @@
+parameters:
+    #blog siteaccess
+    appbundle.blog.user_registration.contenttype: blogger
+    appbundle.blog.user_registration.group_id: 68
+    appbundle.blog.user_registration.templates.form: "user/content_edit.html.twig"
+    #default site access will user default user contenttype and Guest user group
+    appbundle.site.user_registration.contenttype: user
+    appbundle.site.user_registration.group_id: 11
+    #add new custom edit form for other siteaccess if needed
+    appbundle.site.user_registration.templates.form: "user/content_edit.html.twig"

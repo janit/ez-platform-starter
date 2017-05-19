@@ -1,0 +1,36 @@
+{% extends  'blog_pagelayout.html.twig' %}
+
+
+{% block content %}
+<header style="min-height:300px;">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">{{ 'Register'|trans() }}</h1>
+            <hr>
+            {{ 'Standard | Professional | VIP'  }}<br />
+            {{ 'Account'|trans() }}
+
+        </div>
+    </div>
+</header>
+
+<section id="services">
+    <div class="container custom-form">
+        <div class="row">
+            <ul class="list-group offer">
+                <li class="list-group-item list-group-item-success">Standard (1 Articel/month)</li>
+                <li class="list-group-item list-group-item-info">Profesional (5 Articel/month)</li>
+                <li class="list-group-item list-group-item-warning">VIP (unlimited/month)</li>
+            </ul>
+
+            {% import "user/content_form.html.twig" as contentForms %}
+
+            <section class="ez-content-edit">
+                {{ contentForms.display_form(form) }}
+            </section>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -2,6 +2,8 @@ ezpublish:
     system:
         blog:
             pagelayout: blog_pagelayout.html.twig
+            user:
+                login_template: "user/login.html.twig"
         site:
             pagelayout: pagelayout.html.twig
         default:

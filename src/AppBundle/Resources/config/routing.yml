@@ -1,0 +1,8 @@
+app_ez_user_register:
+  path: /register
+  defaults:
+      _controller: "AppBundle:UserRegister:register"
+app_ez_user_register_confirmation:
+  path: /register-confirm
+  defaults:
+      _controller: "AppBundle:UserRegister:registerConfirm"

@@ -48,3 +48,5 @@ composer.lock
 behat.yml
 .php_cs.cache
 auth.json
+.idea/
+/bin/

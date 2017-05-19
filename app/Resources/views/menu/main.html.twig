@@ -23,6 +23,25 @@
                 </li>
                 {% endfor %}
 
+                {% if app.user %}
+                    <li>
+                        <a href="{{ path('logout')}}">Logout</a>
+                    </li>
+                    <li>
+                        <a href="#profil"><small>Hello {{ app.user.username }}!</small></a>
+
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{{ path('app_ez_user_register')}}">Register</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('login')}}">Login</a>
+                    </li>
+                {% endif %}
+
+
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -39,4 +39,4 @@ ezpublish:
             content:
                 tree_root:
                     # Root locationId. Default is top locationId
-                    location_id: 61
+                    location_id: 62

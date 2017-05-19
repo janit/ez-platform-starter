@@ -1,3 +1,6 @@
+app_bundle:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
 login:
     path:   /login
     defaults:  { _controller: ezpublish.security.controller:loginAction }
