@@ -1,0 +1,28 @@
+#services:
+#    ez_zip_code_checker.example:
+#        class: Ez\ZipCodeCheckerBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+parameters:
+    ez_zip_code_checker.fieldType.ezzip.type.class: Ez\ZipCodeCheckerBundle\eZ\Publish\FieldType\ZipCodeChecker\Type
+    ez_zip_code_checker.fieldType.ezzip.converter.class: Ez\ZipCodeCheckerBundle\eZ\Publish\FieldType\ZipCodeChecker\ZipCodeCheckerConverter
+
+    ez_zip_code_checker.field_type.ezzip.form_mapper.class: Ez\ZipCodeCheckerBundle\eZ\Publish\FieldType\FormMapper\ZipCodeCheckerFormMapper
+services:
+    ez_zip_code_checker.fieldType.ezzip.type:
+        parent: ezpublish.fieldType
+        class: %ez_zip_code_checker.fieldType.ezzip.type.class%
+        tags:
+            - {name: ezpublish.fieldType, alias: ezzip}
+
+    ez_zip_code_checker.fieldType.ezzip.converter:
+        class: %ez_zip_code_checker.fieldType.ezzip.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezzip}
+
+    ez_zip_code_checker.field_type.form_mapper.ezzip:
+        class: "%ez_zip_code_checker.field_type.ezzip.form_mapper.class%"
+        tags:
+            - { name: ez.fieldFormMapper.definition, fieldType: ezzip }
+            - { name: ez.fieldFormMapper.value, fieldType: ezzip }
+        arguments:
+            - "@ezpublish.api.service.field_type"

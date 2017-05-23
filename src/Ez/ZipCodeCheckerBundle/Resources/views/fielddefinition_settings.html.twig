@@ -1,0 +1,18 @@
+{% trans_default_domain "fielddefinition" %}
+
+{% block ezzip_settings %}
+<ul class="ez-fielddefinition-settings ez-fielddefinition-{{ fielddefinition.fieldTypeIdentifier }}-settings">
+    {#% set defaultValue = fielddefinition.defaultValue.zip %#}
+    {{ block( 'settings_defaultvalue' ) }}
+    <li class="ez-fielddefinition-setting postalcode-country">
+        <div class="ez-fielddefinition-setting-name">{{ 'fielddefinition.postalcode-country.label'|trans|desc("Postal Code Country:")}}</div>
+        <div class="ez-fielddefinition-setting-value">
+        {% if fielddefinition.validatorConfiguration.postalCodeValidator.postalCodeCountry is defined %}
+            {{ 'fielddefinition.postalcode-country.value'|trans({'%country%': fielddefinition.validatorConfiguration.postalCodeValidator.postalCodeCountry})|desc("Country: %country%")}}
+        {% else %}
+            <em>{{ 'fielddefinition.postalcode-country.undefined'|trans|desc("No defined country")}}</em>
+        {% endif %}
+        </div>
+    </li>
+</ul>
+{% endblock %}

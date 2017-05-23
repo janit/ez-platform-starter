@@ -1,0 +1,9 @@
+system:
+    default:
+        #field_templates:
+            #- {template: EzZipCodeCheckerBundle:fields:ezzip.html.twig, priority: 0}
+        fielddefinition_settings_templates:
+            - {template: EzZipCodeCheckerBundle::fielddefinition_settings.html.twig, priority: 0}
+        #see: ezsystems/repository-forms/bundle/Resources/config/kernel.yml
+        fielddefinition_edit_templates:
+            - { template: EzZipCodeCheckerBundle::field_types_contenttype_edit.html.twig, priority: 0}

@@ -61,7 +61,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new \Kaliop\eZMigrationBundle\EzMigrationBundle(),
 //            new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
-//            new Netgen\TagsBundle\NetgenTagsBundle()
+//            new Netgen\TagsBundle\NetgenTagsBundle(),
+            new Ez\ZipCodeCheckerBundle\EzZipCodeCheckerBundle(),
         );
 
         switch ($this->getEnvironment()) {

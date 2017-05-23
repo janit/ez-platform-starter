@@ -1,0 +1,3 @@
+#ez_zip_code_checker_homepage:
+    #path:     /
+    #defaults: { _controller: EzZipCodeCheckerBundle:Default:index }

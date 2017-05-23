@@ -55,7 +55,8 @@
         "ezsystems/content-on-the-fly-prototype": "~0.1.7",
         "ezsystems/ezplatform-multi-file-upload": "^0.1.0",
         "willdurand/js-translation-bundle": "^2.6.4",
-        "kaliop/ezmigrationbundle": "^3.0"
+        "kaliop/ezmigrationbundle": "^3.0",
+        "vasildakov/postcode": "^1.1"
     },
     "require-dev": {
         "ezsystems/ezplatform-i18n": "^1.0",
