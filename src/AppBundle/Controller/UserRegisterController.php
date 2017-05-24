@@ -37,7 +37,7 @@ class UserRegisterController extends Controller
         if( $this->container->get('security.context')
             ->isGranted('IS_AUTHENTICATED_FULLY') )
         {
-            return $this->redirectToRoute('login');
+            return $this->redirect('/'); // or everywhere
         }
 
         //Get siteaccess configuration
