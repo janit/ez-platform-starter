@@ -170,7 +170,7 @@ class Type extends FieldType
             }
         }
 
-        //working with multidimensional country array
+        //working with multidimensional country array , check first $validCountryPostalCode
         /*
         if (isset($fieldDefinitionCountry) &&
             $fieldDefinitionCountry !== false &&
@@ -191,7 +191,7 @@ class Type extends FieldType
 
 
 
-//print_r($validationErrors);exit;
+    //print_r($validationErrors);exit;
 
         return $validationErrors;
     }
