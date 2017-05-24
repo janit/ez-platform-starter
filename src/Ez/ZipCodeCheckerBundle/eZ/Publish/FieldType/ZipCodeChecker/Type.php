@@ -44,7 +44,8 @@ class Type extends FieldType
             '50969',
             '50777',
 
-        )
+        ),
+        'England' => ''   // this will use a Postal code API
     );
 
 
@@ -57,6 +58,7 @@ class Type extends FieldType
      */
     public function validateValidatorConfiguration($validatorConfiguration)
     {
+
         $validationErrors = array();
 
         foreach ($validatorConfiguration as $validatorIdentifier => $constraints) {
@@ -74,7 +76,11 @@ class Type extends FieldType
 
                 switch ($name) {
                     case 'postalCodeCountry':
-                        if ($value !== false  && !(null === $value) && !array_key_exists($value, $this->validCountryPostalCode )) {
+                        if ($value !== false  &&
+                            !(null === $value) &&
+                            !array_key_exists($value, $this->validCountryPostalCode )
+                        )
+                        {
                             $validationErrors[] = new ValidationError(
                                 "Validator parameter '%parameter%' not included in the supported country list",
                                 null,
