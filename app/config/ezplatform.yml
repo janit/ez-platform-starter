@@ -6,16 +6,27 @@ ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
     repositories:
         default:
-            storage: ~
+            storage:
+                engine: %search_engine%
+                connection: db_default_connection
             search:
-                engine: "%search_engine%"
-                connection: default
+                engine: %search_engine%
+                connection: db_default_connection
+        repo_fr:
+            storage:
+                engine: %search_engine%
+                connection: db_fr_connection
+            search:
+                engine: %search_engine%
+                connection: db_fr_connection
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
         list:
           - site
           - blog
+          - site_fr
+          - site_es
         groups:
             site_group:
                 - site
@@ -23,18 +34,41 @@ ezpublish:
         default_siteaccess: site
         match:
             URIElement: 1
-
+            Compound\LogicalAnd:
+                site_es_access:
+                    matchers:
+                        Map\URI:
+                            es: true
+                        Map\Host:
+                            www.ezplatform.com: true
+                    match: site_es
+            Map\Host:
+                www.ezplatform.fr: site_fr
     # System settings, grouped by siteaccess and/or siteaccess group
     system:
         site_group:
             # Pool to use for cache, needs to be different per repository (database).
-            cache_pool_name: '%cache_pool%'
+            cache_pool_name: defaultPool
             # These reflect the current installers, complete installation before you change them. For changing var_dir
             # it is recommended to install clean, then change setting before you start adding binary content, otherwise you'll
             # need to manually modify your database data to reflect this to avoid exceptions.
             var_dir: var/site
+            repository: default
             languages:
                 - eng-GB
+        site_es:
+            cache_pool_name: defaultPool
+            var_dir: var/site
+            repository: default
+            languages:
+                - esl-ES
+                - eng-GB
+        site_fr:
+            cache_pool_name: frPool
+            var_dir: var/site_fr
+            repository: repo_fr
+            languages:
+                - fre-FR
         blog:
             content:
                 tree_root:
