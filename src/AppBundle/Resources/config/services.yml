@@ -1,4 +1,5 @@
 parameters:
+    appbundle.onuserpublish_slot.class: AppBundle\Slot\OnUserPublishSlot
     #blog siteaccess
     appbundle.blog.user_registration.contenttype: blogger
     appbundle.blog.user_registration.group_id: 68
@@ -8,3 +9,12 @@ parameters:
     appbundle.site.user_registration.group_id: 11
     #add new custom edit form for other siteaccess if needed
     appbundle.site.user_registration.templates.form: "user/content_edit.html.twig"
+services:
+    appbundle.onuserpublish_slot:
+        class: %appbundle.onuserpublish_slot.class%
+        arguments:
+            - @ezpublish.api.service.user
+            - @ezpublish.api.service.location
+            - @ezpublish.signalslot.signal_dispatcher
+        tags:
+            - { name: ezpublish.api.slot, signal: '*' }
